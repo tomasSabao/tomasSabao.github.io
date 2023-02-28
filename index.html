@@ -3,25 +3,79 @@
 <html>
 
     <head>
-        <title>
-            Un titulo
-        </title>
+        <link rel="stylesheet" href="css/styles.css"> 
     </head>
+    <script src="/js/timer.js">     </script>
 
-    <body>
-        <h1>
-            Header 1
-        </h1>
+    <body class = "body_background">
 
-        <p>
-            Seccion 1
-        </p>
+        <div class="violet_kajuut_background kajuut_header_font">
+            Kajuut!
+        </div>
 
-        <p2>
-            Seccion 2
-        </p2>
+
+        <div class="row">
+            
+            <div class="column black_font" id = "timer">
+                60
+            </div>
+
+            <div class="column black_font">
+                Column where the image is supposed to be
+            </div>
+
+            <div class="column black_font">
+                Column where the number of answers is supposed to be
+            </div>
+
+
+        </div>
+
+        <div class="question_style white_background">
+            Pregunta de ejemplo
+        </div>
+        
+
+        <div class="grid_display">
+            <button class='red_background option_button' >
+                Red button
+            </button >
+                
+            <button class='blue_background option_button'>
+                Blue button
+            </button>
+
+            <button class = 'mustard_background option_button'>
+                Mustard button
+            </button>
+
+            <button class = 'green_background option_button'>
+                Green button
+            </button>
+        </div>
+
+        <div>
+            <button onclick="activate_timer()">
+                    a button
+            </button>
+        </div>
+
+    
     </body>
 
+    <script>
+    function timer_reduce(){
+        var remaining_time = document.getElementById("timer").innerHTML;
+        var time_number = parseInt(remaining_time);
+        time_number--;
+        document.getElementById("timer").innerHTML = time_number;
+    }
 
+    function activate_timer(){
+        for (var i = 0; i<10; i++){
+            setTimeout(timer_reduce,1000);
+        }
+    }
 
+</script>
 </html>

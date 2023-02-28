@@ -1,0 +1,96 @@
+
+/*Background colors*/
+
+.red_background{
+    background-color: rgb(224, 42, 42);
+}
+
+.blue_background{
+    background-color: rgb(61, 143, 214);
+}
+
+.mustard_background{
+    background-color:rgb(221, 191, 20);
+}
+
+.green_background{
+    background-color: rgb(6, 167, 6);
+}
+
+.white_background{
+    background-color: white;
+}
+
+.body_background{
+    background-color: rgb(228, 226, 222);
+}
+
+/*Font styles*/
+
+.black_font{
+    color:black;
+}
+
+
+/*width percentages*/
+
+.half_screen_width{
+    width: 50%;
+}
+
+.quarter_screen_width{
+    width:25%;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 27.5%;
+    padding: 15px;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+.grid_display{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+    column-gap: 5px;
+}
+
+.violet_kajuut_background{
+    background-color: blueviolet;
+}
+
+.kajuut_header_font{
+    font-family:'Lucida Sans';
+    font-size:50px;
+}
+
+
+.question_style{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: 'Lexend Deca';
+    font-size:x-large;
+}
+
+
+.option_button{
+    border: none;
+    color:rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
